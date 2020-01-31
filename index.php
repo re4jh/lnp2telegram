@@ -66,12 +66,22 @@ if ($result == $fc_old) {
         file_put_contents($file_cache, $result);
     } else {
         echo '-- there seems to be something new. i am going to tell that on telegram';
-        $sMessage = 'Guck mal, da gibts was Neues: "' . $sLatestTitle_new . '"' . "\n";
+
+        $aRandomTxtNewStuff = array();
+        $aRandomTxtNewStuff[] = 'Guck mal, da gibts was Neues';
+        $aRandomTxtNewStuff[] = 'Seid ihr denn alle ins Essen gefallen? Neues aus dem Logbuch Netzpolitik';
+        $aRandomTxtNewStuff[] = '"Guten Morgen, Linus! - Guten Morgen, Tim!" Frisch aufgestanden mit einer neuen Folge';
+        $aRandomTxtNewStuff[] = 'Der Prit-Stift hat was Neues ins Logbuch geschrieben';
+        $aRandomTxtNewStuff[] = 'Dein besonderes elektronisches Podcastpostfach hat Neues im Logbuch Netzpolitik gefunden';
+        $aRandomTxtNewStuff[] = '🍪 Keks! Es gibt neues von LNP';
+        $aRandomTxtNewStuff[] = 'Mit viel 🎔 für dein 👂 ';
+        $aRandomTxtNewStuff[] = '📡 Es gibt Neues im Neuland';
+        $aRandomTxtNewStuff[] = '🖅 Pocast-Messages incoming';
+        $aRandomTxtNewStuff[] = '🎵 From Timmy with (Prit-)Love';
+
+        $sMessage = $aRandomTxtNewStuff[array_rand($aRandomTxtNewStuff)] . ': "' . $sLatestTitle_new . '"' . "\n";
         $sMessage .= "\n" . 'URL: ' . $sLatestLink_new . "\n";
         sendTelegramMessage($sMessage, '###the-chat-id-to-post-to###', '###get-your-own-key-from-botfather###');
         file_put_contents($file_cache, $result);
     }
 }
-
-
-
