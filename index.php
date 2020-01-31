@@ -66,7 +66,7 @@ if ($result == $fc_old) {
         file_put_contents($file_cache, $result);
     } else {
         echo '-- there seems to be something new. i am going to tell that on telegram';
-        $sMessage = 'Neue Folge: "' . $sLatestTitle_new . '"' . "\n";
+        $sMessage = 'Guck mal, da gibts was Neues: "' . $sLatestTitle_new . '"' . "\n";
         $sMessage .= "\n" . 'URL: ' . $sLatestLink_new . "\n";
         sendTelegramMessage($sMessage, '###the-chat-id-to-post-to###', '###get-your-own-key-from-botfather###');
         file_put_contents($file_cache, $result);
