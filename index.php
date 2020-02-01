@@ -69,15 +69,21 @@ if ($result == $fc_old) {
 
         $aRandomTxtNewStuff = array();
         $aRandomTxtNewStuff[] = 'Guck mal, da gibts was Neues';
-        $aRandomTxtNewStuff[] = 'Seid ihr denn alle ins Essen gefallen? Neues aus dem Logbuch Netzpolitik';
+        $aRandomTxtNewStuff[] = 'Seid ihr denn alle ins Essen gefallen? Neues aus dem Logbuch:Netzpolitik';
         $aRandomTxtNewStuff[] = '"Guten Morgen, Linus! - Guten Morgen, Tim!" Frisch aufgestanden mit einer neuen Folge';
         $aRandomTxtNewStuff[] = 'Der Prit-Stift hat was Neues ins Logbuch geschrieben';
-        $aRandomTxtNewStuff[] = 'Dein besonderes elektronisches Podcastpostfach hat Neues im Logbuch Netzpolitik gefunden';
-        $aRandomTxtNewStuff[] = '🍪 Keks! Es gibt neues von LNP';
+        $aRandomTxtNewStuff[] = 'Dein besonderes elektronisches Podcastpostfach hat Neues im Logbuch:Netzpolitik gefunden';
+        $aRandomTxtNewStuff[] = '🍪 Keks! Es gibt Neues von LNP';
         $aRandomTxtNewStuff[] = 'Mit viel 🎔 für dein 👂 ';
         $aRandomTxtNewStuff[] = '📡 Es gibt Neues im Neuland';
         $aRandomTxtNewStuff[] = '🖅 Pocast-Messages incoming';
         $aRandomTxtNewStuff[] = '🎵 From Timmy with (Prit-)Love';
+        $aRandomTxtNewStuff[] = 'Neues aus der Metaebene';
+        $aRandomTxtNewStuff[] = 'Hacker haben Hacker-Tools, Podcaster haben Padcatcher. Willkommen in der Metaebene und zur neuen LNP-Folge';
+        $aRandomTxtNewStuff[] = 'Linus und Tim haben sich in dein System gehackt und dich mit einer neuen Folge infiziert:';
+
+
+
 
         $sMessage = $aRandomTxtNewStuff[array_rand($aRandomTxtNewStuff)] . ': "' . $sLatestTitle_new . '"' . "\n";
         $sMessage .= "\n" . 'URL: ' . $sLatestLink_new . "\n";
