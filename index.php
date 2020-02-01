@@ -80,7 +80,7 @@ if ($result == $fc_old) {
         $aRandomTxtNewStuff[] = '🎵 From Timmy with (Prit-)Love';
         $aRandomTxtNewStuff[] = 'Neues aus der Metaebene';
         $aRandomTxtNewStuff[] = 'Hacker haben Hacker-Tools, Podcaster haben Padcatcher. Willkommen in der Metaebene und zur neuen LNP-Folge';
-        $aRandomTxtNewStuff[] = 'Linus und Tim haben sich in dein System gehackt und dich mit einer neuen Folge infiziert:';
+        $aRandomTxtNewStuff[] = 'Linus und Tim haben sich in dein System gehackt und dich mit einer neuen Folge infiziert';
 
 
 
