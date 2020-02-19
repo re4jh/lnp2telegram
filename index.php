@@ -74,9 +74,9 @@ if ($result == $fc_old) {
         $aRandomTxtNewStuff[] = 'Der Prit-Stift hat was Neues ins Logbuch geschrieben';
         $aRandomTxtNewStuff[] = 'Dein besonderes elektronisches Podcastpostfach hat Neues im Logbuch:Netzpolitik gefunden';
         $aRandomTxtNewStuff[] = '🍪 Keks! Es gibt Neues von LNP';
-        $aRandomTxtNewStuff[] = 'Mit viel 🎔 für dein 👂 ';
+        $aRandomTxtNewStuff[] = 'Mit viel ❤ für dein 👂 ';
         $aRandomTxtNewStuff[] = '📡 Es gibt Neues im Neuland';
-        $aRandomTxtNewStuff[] = '🖅 Pocast-Messages incoming';
+        $aRandomTxtNewStuff[] = '📨 Pocast-Messages incoming';
         $aRandomTxtNewStuff[] = '🎵 From Timmy with (Prit-)Love';
         $aRandomTxtNewStuff[] = 'Neues aus der Metaebene';
         $aRandomTxtNewStuff[] = 'Hacker haben Hacker-Tools, Podcaster haben Padcatcher. Willkommen in der Metaebene und zur neuen LNP-Folge';
