@@ -17,7 +17,7 @@ function sendTelegramMessage($sMessage, $sChatId, $sToken)
 }
 
 $file_cache = 'lastversion.xml';
-$url = "https://feeds.metaebene.me/lnp/m4a";
+$url = "https://minkorrekt.de/feed/m4a/";
 $fc_old = file_get_contents($file_cache);
 
 // get the feed as by curl
@@ -69,21 +69,11 @@ if ($result == $fc_old) {
 
         $aRandomTxtNewStuff = array();
         $aRandomTxtNewStuff[] = 'Guck mal, da gibts was Neues';
-        $aRandomTxtNewStuff[] = 'Seid ihr denn alle ins Essen gefallen? Neues aus dem Logbuch:Netzpolitik';
-        $aRandomTxtNewStuff[] = '"Guten Morgen, Linus! - Guten Morgen, Tim!" Frisch aufgestanden mit einer neuen Folge';
-        $aRandomTxtNewStuff[] = 'Der Prit-Stift hat was Neues ins Logbuch geschrieben';
-        $aRandomTxtNewStuff[] = 'Dein besonderes elektronisches Podcastpostfach hat Neues im Logbuch:Netzpolitik gefunden';
-        $aRandomTxtNewStuff[] = '🍪 Keks! Es gibt Neues von LNP';
+        $aRandomTxtNewStuff[] = 'Dein besonderes elektronisches Podcastpostfach hat neues, methodisch inkorrektes gefunden.';
+        $aRandomTxtNewStuff[] = '🍪 Keks! Es gibt Neues von minkorrekt.de';
         $aRandomTxtNewStuff[] = 'Mit viel ❤ für dein 👂 ';
         $aRandomTxtNewStuff[] = '📡 Es gibt Neues im Neuland';
         $aRandomTxtNewStuff[] = '📨 Pocast-Messages incoming';
-        $aRandomTxtNewStuff[] = '🎵 From Timmy with (Prit-)Love';
-        $aRandomTxtNewStuff[] = 'Neues aus der Metaebene';
-        $aRandomTxtNewStuff[] = 'Hacker haben Hacker-Tools, Podcaster haben Padcatcher. Willkommen in der Metaebene und zur neuen LNP-Folge';
-        $aRandomTxtNewStuff[] = 'Linus und Tim haben sich in dein System gehackt und dich mit einer neuen Folge infiziert';
-
-
-
 
         $sMessage = $aRandomTxtNewStuff[array_rand($aRandomTxtNewStuff)] . ': "' . $sLatestTitle_new . '"' . "\n";
         $sMessage .= "\n" . 'URL: ' . $sLatestLink_new . "\n";
